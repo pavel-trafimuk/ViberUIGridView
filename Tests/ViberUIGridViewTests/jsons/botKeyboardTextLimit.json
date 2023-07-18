@@ -1,0 +1,23 @@
+{
+    "Type": "keyboard",
+    "Buttons": [
+                {
+                "Columns": 3,
+                "Rows": 2,
+                "BgColor": "#55C3B8",
+                "ActionBody": "Yes",
+                "Text": "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890!12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890!123456789012312312312344412123123123!!--",
+                "TextHAlign" : "left"
+                },
+                {
+                "Columns": 3,
+                "Rows": 2,
+                "BgColor": "#55C3B8",
+                "BgMediaType" : "gif",
+                "BgMedia" : "https://www.dropbox.com/s/nfe3b58dyf57ak5/no.gif?dl=1",
+                "ActionBody": "No",
+                "Text": "<font color=\"#ffffff\">No</font>",
+                "TextHAlign" : "left"
+                }
+                ]
+}

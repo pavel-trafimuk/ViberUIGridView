@@ -1,0 +1,87 @@
+{
+   "Type":"keyboard",
+   "DefaultHeight":true,
+   "Buttons":[
+      {
+         "ActionType":"reply",
+         "ActionBody":"Где получить полную и достоверную информацию о коронавирусе?",
+         "Columns":6,
+         "Rows":1,
+         "Text":"🦠 Где получить полную и достоверную информацию о коронавирусе❓",
+         "Image":"https://www.ulstu.club/viber-bot/img/Информация.jpg",
+         "TextSize":"regular"
+      },
+      {
+         "ActionType":"reply",
+         "ActionBody":"Общая информация",
+         "Columns":3,
+         "Rows":1,
+         "Text":"Общая информация 💡",
+         "Image":"https://www.ulstu.club/viber-bot/img/Общая.jpg",
+         "TextSize":"regular"
+      },
+      {
+         "ActionType":"reply",
+         "ActionBody":"Профилактика",
+         "Columns":3,
+         "Rows":1,
+         "Text":"Профилактика 💊",
+         "Image":"https://www.ulstu.club/viber-bot/img/профилактика.jpg",
+         "TextSize":"regular"
+      },
+      {
+         "ActionType":"reply",
+         "ActionBody":"Карантин дома",
+         "Columns":3,
+         "Rows":1,
+         "Text":"Карантин дома 🛏",
+         "Image":"https://www.ulstu.club/viber-bot/img/дома.jpg",
+         "TextSize":"regular"
+      },
+      {
+         "ActionType":"reply",
+         "ActionBody":"Карантин в больнице",
+         "Columns":3,
+         "Rows":1,
+         "Text":"Карантин в больнице 💉",
+         "Image":"https://www.ulstu.club/viber-bot/img/больница.jpg",
+         "TextSize":"regular"
+      },
+      {
+         "ActionType":"reply",
+         "ActionBody":"Диагностика и лечение",
+         "Columns":3,
+         "Rows":1,
+         "Text":"Диагностика и лечение 📊",
+         "Image":"https://www.ulstu.club/viber-bot/img/Диагностика.jpg",
+         "TextSize":"regular"
+      },
+      {
+         "ActionType":"reply",
+         "ActionBody":"Самоизоляция",
+         "Columns":3,
+         "Rows":1,
+         "Text":"Самоизоляция 🏠",
+         "Image":"https://www.ulstu.club/viber-bot/img/самоизоляция.jpg",
+         "TextSize":"regular"
+      },
+      {
+         "ActionType":"reply",
+         "ActionBody":"Вызвать волонтера",
+         "Columns":6,
+         "Rows":1,
+         "Text":"Вызвать волонтера 📱",
+         "Image":"https://www.ulstu.club/viber-bot/img/волонтер.jpg",
+         "TextSize":"regular"
+      },
+      {
+         "ActionType":"open-url",
+         "ActionBody":"https://instagram.com/morozov_si/",
+         "Columns":6,
+         "Rows":1,
+         "Text":"Видеообращение от губернатора",
+         "Image":"https://www.ulstu.club/viber-bot/img/губернатор.jpg",
+         "TextSize":"regular"
+      }
+   ]
+}

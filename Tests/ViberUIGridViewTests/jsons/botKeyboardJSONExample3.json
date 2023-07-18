@@ -1,0 +1,27 @@
+{
+    "Type": "keyboard",
+    "Buttons": [
+                {
+                "Columns" : 2,
+                "Rows" : 2,
+                "BgColor": "#00FF00",
+                "BgMediaType" : "picture",
+                "BgMedia" : "http://www.our-energy.com/wp-content/uploads/2015/08/windmill-826150.jpg",
+                "ActionType": "open-url",
+                "ActionBody": "http://bbc.com/green_energy.html",
+                "Text": "<font color=\"#ffffff\">Green Energy</font>",
+                "TextHAlign" : "left",
+                "TextSize": "large"
+                },
+                {
+                "Columns" : 4,
+                "Rows" : 2,
+                "BgColor": "#FFFFFF",
+                "ActionType": "open-url",
+                "ActionBody": "http://bbc.com/trump.html",
+                "Text": "<i><font color=\"#bfbfbf\">CNN@Donald Trump met Wednesday with GOP strategist Paul Manafort, a huddle that suggests campaign changes... Republican presidential</font> <br><font color=\"#FF0000\">Read More</font></i>",
+                "TextHAlign" : "left",
+                "TextSize": "small"
+                }
+                ]
+}

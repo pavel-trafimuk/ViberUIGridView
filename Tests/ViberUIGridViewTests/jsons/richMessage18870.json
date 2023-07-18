@@ -1,0 +1,74 @@
+{
+        "Type ": "rich_media",
+        "BgColor ": "#FFFFFF",
+        "ButtonsGroupColumns": 6,
+        "Buttons": [{
+                    "BgLoop": false,
+                    "ActionType": "open-url",
+                    "Rows": 3,
+                    "ActionBody": "https: //chatter-api-viber.herokuapp.com/1341267-000039-0977",
+                    "ReplyType": "query",
+                    "Columns": 6,
+                    "TextOpacity": 0,
+                    "Image": "https://viberimg.shopchat.com/1341267-000039-0977_square?v=vimage20"
+                    }, {
+                    "BgLoop": false,
+                    "ActionType": "none",
+                    "TextSize": "large",
+                    "Rows": 1,
+                    "TextHAlign": "left",
+                    "Text": "<font color='#323232'> <b>Two Fold Skirt</b> </font>",
+                    "ReplyType": "query",
+                    "Columns": 6,
+                    "TextOpacity": 0,
+                    "TextVAlign": "middle"
+                    }, {
+                    "BgLoop": false,
+                    "ActionType": "none",
+                    "TextSize": "medium",
+                    "Rows": 1,
+                    "TextHAlign": "left",
+                    "Text": "<font color='#777777'> NA - KD </font>",
+                    "ReplyType": "query",
+                    "Columns": 3,
+                    "TextOpacity": 0,
+                    "TextVAlign": "middle"
+                    }, {
+                    "BgLoop": false,
+                    "ActionType": "none",
+                    "TextSize": "medium",
+                    "Rows": 1,
+                    "TextHAlign": "right",
+                    "Text": "<font color='#6fc133'> $69 .64 </font>",
+                    "ReplyType": "query",
+                    "Columns": 3,
+                    "TextOpacity": 0,
+                    "TextVAlign": "middle"
+                    }, {
+                    "TextSize": "large",
+                    "TextVAlign": "middle",
+                    "TextHAlign": "middle",
+                    "BgLoop": false,
+                    "ActionBody": "https://chatter-api-viber.herokuapp.com/1341267-000039-0977",
+                    "TextOpacity": 0,
+                    "Columns": 6,
+                    "ActionType": "open-url",
+                    "ReplyType": "query",
+                    "Image": "https://viberimg.shopchat.com/assets/green_btn.png",
+                    "Rows": 1,
+                    "Text": "<font color='#ffffff'> Buy </font>"
+                    }, {
+                    "BgLoop": false,
+                    "ActionType": "reply",
+                    "TextSize": "small",
+                    "Rows": 1,
+                    "TextHAlign": "middle",
+                    "ActionBody": "product_nakd_1341267-000039-0977",
+                    "Text": "<font color='#777777'>  MORE DETAILS </font >",
+                    "Columns": 6,
+                    "TextOpacity": 0,
+                    "TextVAlign": "middle",
+                    "ReplyType": "query"
+                    }],
+        "ButtonsGroupRows": 7
+    }

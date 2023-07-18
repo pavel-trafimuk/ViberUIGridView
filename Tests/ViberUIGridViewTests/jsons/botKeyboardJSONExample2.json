@@ -1,0 +1,23 @@
+{
+    "Type": "keyboard",
+    "Buttons": [
+                {
+                "BgColor": "#69C48A",
+                "ActionBody": "Today",
+                "Text": "<b><font color=\"#ffffff\">Today's Forecast</font></b>",
+                "TextSize": "small"
+                },
+                {
+                "BgColor": "#58C3B8",
+                "ActionBody": "Tomorrow",
+                "Text": "<font color=\"#ffffff\">Tomorrow's Forecast</font>",
+                "TextSize": "small"
+                },
+                {
+                "BgColor": "#53C0D3",
+                "ActionBody": "Next 5 days",
+                "Text": "<font color=\"#ffffff\">Next 5 days Forecast</font>",
+                "TextSize": "small"
+                }
+                ]
+}

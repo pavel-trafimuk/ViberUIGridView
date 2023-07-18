@@ -1,0 +1,172 @@
+{
+    "Type": "keyboard",
+    "Buttons": [{
+                "Columns": 2,
+                "Rows": 2,
+                "ActionType": "open-url",
+                "ActionBody": "reply",
+                "BgColor": "#2db9b9",
+                "Text": "test",
+                "TextSize": "regular",
+                "Image": "http://images.clipartpanda.com/smiley-face-png-niEXeBpBT.png",
+                "TextForPA": "hi"
+                },
+                
+                {
+                "Columns": 2,
+                "Rows": 2,
+                "ActionType": "open-url",
+                "ActionBody": "reply",
+                "BgColor": "#2db9b9",
+                "Text": "<font color='#FFFFFF'><b>Magic</b><br>Coldplay</font>",
+                "TextSize": "regular",
+                "Image": "https://images-na.ssl-images-amazon.com/images/I/51inO4DBH0L._SS500.jpg",
+                "TextForPA": "hi",
+                "TextVAlign": "bottom",
+                "TextBgGradientColor" : "#3F3F3F"
+                },
+                
+                {
+                "Columns": 2,
+                "Rows": 2,
+                "ActionType": "open-url",
+                "ActionBody": "reply",
+                "BgColor": "#2db9b9",
+                "Text": "test",
+                "TextSize": "regular",
+                "Image": "http://images.clipartpanda.com/smiley-face-png-niEXeBpBT.png",
+                "TextForPA": "hi",
+                "TextBgGradientColor" : "invalid"
+                },
+                
+                {
+                "Columns": 2,
+                "Rows": 2,
+                "ActionType": "open-url",
+                "ActionBody": "reply",
+                "BgColor": "#2db9b9",
+                "Text": "<font color='#FFFFFF'><b>Paris</b><br>Chainmokers</font>",
+                "TextSize": "regular",
+                "Image": "http://images.clipartpanda.com/smiley-face-png-niEXeBpBT.png",
+                "TextForPA": "hi",
+                "TextVAlign": "top",
+                "TextBgGradientColor" : "3F3F3F"
+                },
+                
+                {
+                "Columns": 2,
+                "Rows": 2,
+                "ActionType": "open-url",
+                "ActionBody": "reply",
+                "BgColor": "#2db9b9",
+                "TextSize": "regular",
+                "Image": "http://images.clipartpanda.com/smiley-face-png-niEXeBpBT.png",
+                "TextForPA": "hi",
+                "TextBgGradientColor" : "3F3F3F"
+                },
+                
+                {
+                "Columns": 2,
+                "Rows": 2,
+                "ActionType": "open-url",
+                "ActionBody": "reply",
+                "BgColor": "#2db9b9",
+                "Text": "test",
+                "TextSize": "regular",
+                "Image": "http://images.clipartpanda.com/smiley-face-png-niEXeBpBT.png",
+                "TextVAlign": "middle",
+                "TextBgGradientColor" : "3F3F3F"
+                },
+                
+                {
+                "Columns": 2,
+                "Rows": 2,
+                "ActionType": "open-url",
+                "ActionBody": "reply",
+                "BgColor": "#2db9b9",
+                "Text": "test",
+                "TextSize": "regular",
+                "Image": "http://images.clipartpanda.com/smiley-face-png-niEXeBpBT.png",
+                "TextForPA": "hi"
+                },
+                
+                {
+                "Columns": 2,
+                "Rows": 2,
+                "ActionType": "open-url",
+                "ActionBody": "reply",
+                "BgColor": "#2db9b9",
+                "Text": "<font color='#FFFFFF'><b>Magic</b><br>Coldplay</font>",
+                "TextSize": "regular",
+                "Image": "https://images-na.ssl-images-amazon.com/images/I/51inO4DBH0L._SS500.jpg",
+                "TextForPA": "hi",
+                "TextVAlign": "bottom",
+                "TextBgGradientColor" : "#3F3F3F"
+                },
+                
+                {
+                "Columns": 2,
+                "Rows": 2,
+                "ActionType": "open-url",
+                "ActionBody": "reply",
+                "BgColor": "#2db9b9",
+                "Text": "test",
+                "TextSize": "regular",
+                "Image": "http://images.clipartpanda.com/smiley-face-png-niEXeBpBT.png",
+                "TextForPA": "hi",
+                "TextBgGradientColor" : "invalid"
+                },
+                
+                {
+                "Columns": 2,
+                "Rows": 2,
+                "ActionType": "open-url",
+                "ActionBody": "reply",
+                "BgColor": "#2db9b9",
+                "Text": "<font color='#FFFFFF'><b>Paris</b><br>Chainmokers</font>",
+                "TextSize": "regular",
+                "Image": "https://www.directlyrics.com/img/upload/the-chainsmokers-paris-video.jpg",
+                "TextForPA": "hi",
+                "TextVAlign": "top",
+                "TextBgGradientColor" : "3F3F3F"
+                },
+                
+                {
+                "Columns": 2,
+                "Rows": 2,
+                "ActionType": "open-url",
+                "ActionBody": "reply",
+                "BgColor": "#2db9b9",
+                "TextSize": "regular",
+                "Image": "http://images.clipartpanda.com/smiley-face-png-niEXeBpBT.png",
+                "TextForPA": "hi",
+                "TextBgGradientColor" : "3F3F3F"
+                },
+                
+                {
+                "Columns": 2,
+                "Rows": 2,
+                "ActionType": "open-url",
+                "ActionBody": "reply",
+                "BgColor": "#2db9b9",
+                "Text": "test",
+                "TextSize": "regular",
+                "Image": "http://images.clipartpanda.com/smiley-face-png-niEXeBpBT.png",
+                "TextVAlign": "middle",
+                "TextBgGradientColor" : "3F3F3F"
+                },
+                
+                {
+                "Columns": 2,
+                "Rows": 2,
+                "ActionType": "open-url",
+                "ActionBody": "reply",
+                "BgColor": "#2db9b9",
+                "TextSize": "regular",
+                "Image": "http://images.clipartpanda.com/smiley-face-png-niEXeBpBT.png",
+                "TextForPA": "hi"
+                }
+
+
+                ]
+}
