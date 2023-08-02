@@ -88,6 +88,10 @@ public struct UIGrid: Codable, Equatable {
         case favoritesMetadata = "FavoritesMetadata"
     }
     
+    public enum Constants {
+        static let defaultHeightScale = 100
+    }
+    
     public init(type: UIGridType,
                 isDefaultHeight: Bool? = nil,
                 customDefaultHeight: Int? = nil,
@@ -185,6 +189,17 @@ public struct UIGrid: Codable, Equatable {
         self.favoritesMetadata = try container.decodeIfPresent(UIGridFavorites.self, forKey: .favoritesMetadata)
     }
     
+    /// ex isGIFExist
+    public var containsGIF: Bool {
+        buttons.contains(where: { $0.backgroundMediaType == .gif })
+    }
+    
+    /// ex isDefaultScale
+    public var isDefaultHeightScale: Bool {
+        heightScale == nil || heightScale == Constants.defaultHeightScale
+    }
+    
+    // TODO: implement builder
 //    public static let keyboard(buttonBuilders: [UIGridButtonBuilder?],
 //                               isDefaultHeight: Bool? = nil,
 //                               customDefaultHeight: Int? = nil,
@@ -230,10 +245,5 @@ public struct UIGrid: Codable, Equatable {
 //                     buttonsGroupColumns: buttonsGroupColumns,
 //                     buttonsGroupRows: buttonsGroupRows,
 //                     inputFieldState: inputFieldState)
-//    }
-//    
-    // TODO: implement
-//    - (void)updateButtonsSize {
-//        [self.buttonModels makeObjectsPerformSelector:@selector(updateSizeViaDefaultSize:) withObject:[NSValue valueWithCGSize:[self defaultButtonSize]]];
 //    }
 }
