@@ -1,0 +1,42 @@
+{
+    "FavoritesMetadata": {
+        "type": "link",
+        "url": "www.google.com/plotkin/article.htm",
+        "title": "interesting article about favorites CE",
+        "thumbnail": "www.google.com/plotkin/pic.jpg",
+        "domain": "www.google.com",
+        "width": 480,
+        "height": 320,
+        "force": false,
+        "richMedia": "{\"ButtonsGroupColumns\": 100, \"ButtonsGroupRows\": 100, \"Buttons\": []}",
+        "minApiVersion": 4,
+        "alternativeUrl": "www.google.com/egor/article.htm",
+        "alternativeText": ""
+    },
+    "Buttons": [{
+                "ActionType": "reply",
+                "ActionBody": "Yes",
+                "Silent": true,
+                "ReplyType": "message"
+                
+                }, {
+                "ActionType": "reply",
+                "ActionBody": "Yes",
+                "Silent": true,
+                "ReplyType": "query"
+                }, {
+                "ActionType": "open-url",
+                "ActionBody": "No",
+                "Silent": false
+                }, {
+                "ActionType": "none",
+                "ActionBody": "No"
+                }, {
+                "ActionType": "open-map",
+                "ActionBody": "No",
+                "Map": {
+                    "Latitude": "50.005",
+                    "Longitude": "0.105",
+                }
+                }]
+}

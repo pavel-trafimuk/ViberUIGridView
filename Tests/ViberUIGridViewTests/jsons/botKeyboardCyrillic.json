@@ -1,0 +1,87 @@
+{
+   "Type":"keyboard",
+   "DefaultHeight":true,
+   "Buttons":[
+      {
+         "ActionType":"reply",
+         "ActionBody":"CoronaVirus Info",
+         "Columns":6,
+         "Rows":1,
+         "Text":"🦠 CoronaVirus Info❓",
+         "Image":"https://www.ulstu.club/viber-bot/img/Info.jpg",
+         "TextSize":"regular"
+      },
+      {
+         "ActionType":"reply",
+         "ActionBody":"General Info",
+         "Columns":3,
+         "Rows":1,
+         "Text":"General Info 💡",
+         "Image":"https://www.ulstu.club/viber-bot/img/General.jpg",
+         "TextSize":"regular"
+      },
+      {
+         "ActionType":"reply",
+         "ActionBody":"Profi",
+         "Columns":3,
+         "Rows":1,
+         "Text":"Profi 💊",
+         "Image":"https://www.ulstu.club/viber-bot/img/profi.jpg",
+         "TextSize":"regular"
+      },
+      {
+         "ActionType":"reply",
+         "ActionBody":"Self-Isolation",
+         "Columns":3,
+         "Rows":1,
+         "Text":"Self Isolation 🛏",
+         "Image":"https://www.ulstu.club/viber-bot/img/home.jpg",
+         "TextSize":"regular"
+      },
+      {
+         "ActionType":"reply",
+         "ActionBody":"Hospital",
+         "Columns":3,
+         "Rows":1,
+         "Text":"Hospital 💉",
+         "Image":"https://www.ulstu.club/viber-bot/img/hospital.jpg",
+         "TextSize":"regular"
+      },
+      {
+         "ActionType":"reply",
+         "ActionBody":"Diagnose",
+         "Columns":3,
+         "Rows":1,
+         "Text":"Diagnose 📊",
+         "Image":"https://www.ulstu.club/viber-bot/img/diagnose.jpg",
+         "TextSize":"regular"
+      },
+      {
+         "ActionType":"reply",
+         "ActionBody":"Go Away",
+         "Columns":3,
+         "Rows":1,
+         "Text":"Go Away 🏠",
+         "Image":"https://www.ulstu.club/viber-bot/img/away.jpg",
+         "TextSize":"regular"
+      },
+      {
+         "ActionType":"reply",
+         "ActionBody":"Volonteur",
+         "Columns":6,
+         "Rows":1,
+         "Text":"Volonteur 📱",
+         "Image":"https://www.ulstu.club/viber-bot/img/Volonteur.jpg",
+         "TextSize":"regular"
+      },
+      {
+         "ActionType":"open-url",
+         "ActionBody":"https://instagram.com/morozov_si/",
+         "Columns":6,
+         "Rows":1,
+         "Text":"Video",
+         "Image":"https://www.ulstu.club/viber-bot/img/video.jpg",
+         "TextSize":"regular"
+      }
+   ]
+}

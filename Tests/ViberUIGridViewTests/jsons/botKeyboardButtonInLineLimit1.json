@@ -1,0 +1,54 @@
+{
+    "Buttons": [
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#55C3B8",
+                "ActionBody": "Yes",
+                "Text": "<b><font color=\"#ffffff\">Yes</font></b>",
+                "TextHAlign" : "left"
+                },
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#55C3B8",
+                "ActionBody": "Yes",
+                "Text": "<b><font color=\"#ffffff\">Yes</font></b>",
+                "TextHAlign" : "left"
+                },
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#55C3B8",
+                "ActionBody": "Yes",
+                "Text": "<b><font color=\"#ffffff\">Yes</font></b>",
+                "TextHAlign" : "left"
+                },
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#55C3B8",
+                "ActionBody": "Yes",
+                "Text": "<b><font color=\"#ffffff\">Yes</font></b>",
+                "TextHAlign" : "left"
+                },
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#55C3B8",
+                "ActionBody": "Yes",
+                "Text": "<b><font color=\"#ffffff\">Yes</font></b>",
+                "TextHAlign" : "left"
+                },
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#55C3B8",
+                "BgMediaType" : "gif",
+                "BgMedia" : "https://www.dropbox.com/s/nfe3b58dyf57ak5/no.gif?dl=1",
+                "ActionBody": "123456789012345678901234567890",
+                "Text": "<font color=\"#ffffff\">No</font>",
+                "TextHAlign" : "left"
+                }
+                ]
+}

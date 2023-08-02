@@ -1,0 +1,33 @@
+{
+    "Type": "keyboard",
+    "Buttons": [
+                {
+                "Columns": "dd",
+                "Rows": 2,
+                "BgColor": 3,
+                "ActionBody": "ddd",
+                "TextOpacity" : 150,
+                "Image" : "https://www.dropbox.com/s/nfe3b58dyf57ak5/no.gif?dl=1",
+                
+                "Text": {
+                "Columns": 3,
+                "Rows": 2,
+                "BgColor": "#55C3B8",
+                "ActionBody": "Yes",
+                "Text": "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890!1234567890",
+                "TextHAlign" : 45
+                },
+                "TextHAlign" : 8885
+                },
+                
+                {
+                "Columns": 6,
+                "Rows": 2,
+                "BgColor": "#55C3B8",
+                "BgMediaType" : false,
+                "ActionBody": 13,
+                "Text": "<font color=\"#ffffff\">No</font>",
+                "TextHAlign" : "left"
+                }
+                ]
+}

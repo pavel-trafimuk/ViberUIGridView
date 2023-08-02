@@ -1,0 +1,11 @@
+{
+    "Type": "keyboard",
+    "Buttons": [
+                {
+                "BgColor": "#454545",
+                "ActionType": "open-url",
+                "ActionBody": "www.tvp.info",
+                "Text": "<b>Viber</b> is the best company",
+                }
+                ]
+}

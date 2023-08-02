@@ -1,0 +1,287 @@
+{
+    "ButtonsGroupColumns" : "dd",
+    "ButtonsGroupRows" : "dd",
+    "Buttons": [
+                {
+                "Columns": 6,
+                "Rows": 4,
+                "BgColor": "#FFFFFF",
+                "ActionType": "none",
+                "BgMediaType" : "picture",
+                "BgMedia" : "http://www.festivalpedralbes.com/wp-content/uploads/2016/04/Jose-Gonzalez-web-Ok.jpg"
+                },
+                
+                {
+                "Columns": 5,
+                "Rows": 2,
+                "BgColor": "#1D3C63",
+                "ActionType": "none",
+                "Text": "<font color=\"#ffffff\"><b>Jose Gonzales </b><br>21:00<br> El Sol, Calle Jardines, 3</font>",
+                "TextHAlign" : "left",
+                "TextSize" : "small"
+                },
+                
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "open-url",
+                "ActionBody": "https://goo.gl/maps/9zemfPkjXC12",
+                "Image" : "http://newsite.southwindschurch.org/wp-content/uploads/2015/01/Location-Logo.png"
+                },
+                
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "none"
+                },
+                
+                {
+                "Columns": 6,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "reply",
+                "ActionBody" : "test reply",
+                "Text": "<font color=\"#27CFEA\">Reply</font>",
+                "TextHAlign" : "center",
+                "TextSize" : "small"
+                },
+                
+                {
+                "Columns": 6,
+                "Rows": 4,
+                "BgColor": "#FFFFFF",
+                "ActionType": "none",
+                "BgMediaType" : "picture",
+                "BgMedia" : "http://www.allidoislisten.com/wp-content/uploads/2012/07/tameimpala_elephant-620x412-290x290.png"
+                },
+                
+                {
+                "Columns": 5,
+                "Rows": 2,
+                "BgColor": "#1D3C63",
+                "ActionType": "none",
+                "Text": "<font color=\"#ffffff\"><b>Tame Impala </b> <br>23:00<br> Sirocco Club, Calle Mar 18</font>",
+                "TextHAlign" : "left",
+                "TextSize" : "small"
+                },
+                
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "open-url",
+                "ActionBody": "https://goo.gl/maps/9zemfPkjXC12",
+                "Image" : "http://newsite.southwindschurch.org/wp-content/uploads/2015/01/Location-Logo.png"
+                },
+                
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "none"
+                },
+                
+                {
+                "Columns": 6,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "open-url",
+                "ActionBody" : "viber-test://shopping/open?productid=bla-bla-bla",
+                "Text": "<font color=\"#27CFEA\">Open Keyboard</font>",
+                "TextHAlign" : "center",
+                "TextSize" : "small"
+                },
+                
+                
+                {
+                "Columns": 6,
+                "Rows": 4,
+                "BgColor": "#FFFFFF",
+                "ActionType": "none",
+                "BgMediaType" : "picture",
+                "BgMedia" : "http://www.belaruspartisan.org/upload/iblock/9b3/9b3b74f4f258255fcd6c48553c700599.jpg"
+                },
+                
+                {
+                "Columns": 5,
+                "Rows": 2,
+                "BgColor": "#1D3C63",
+                "ActionType": "none",
+                "Text": "<font color=\"#ffffff\"><b>J:Морс </b> <br>20:00<br> Sirocco Club, Calle Mar 18</font>",
+                "TextHAlign" : "left",
+                "TextSize" : "small"
+                },
+                
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "open-url",
+                "ActionBody": "https://goo.gl/maps/9zemfPkjXC12",
+                "Image" : "http://newsite.southwindschurch.org/wp-content/uploads/2015/01/Location-Logo.png"
+                },
+                
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "none"
+                },
+                
+                {
+                "Columns": 6,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "open-url",
+                "ActionBody" : "http://www.tameimpala.com",
+                "Text": "<font color=\"#27CFEA\">BOOK TICKETS NOW</font>",
+                "TextHAlign" : "center",
+                "TextSize" : "small"
+                },
+                
+                {
+                "Columns": 6,
+                "Rows": 4,
+                "BgColor": "#FFFFFF",
+                "ActionType": "none",
+                "BgMediaType" : "picture",
+                "BgMedia" : "http://www.festivalpedralbes.com/wp-content/uploads/2016/04/Jose-Gonzalez-web-Ok.jpg"
+                },
+                
+                {
+                "Columns": 5,
+                "Rows": 2,
+                "BgColor": "#1D3C63",
+                "ActionType": "none",
+                "Text": "<font color=\"#ffffff\"><b>Jose Gonzales </b><br>21:00<br> El Sol, Calle Jardines, 3</font>",
+                "TextHAlign" : "left",
+                "TextSize" : "small"
+                },
+                
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "open-url",
+                "ActionBody": "https://goo.gl/maps/9zemfPkjXC12",
+                "Image" : "http://newsite.southwindschurch.org/wp-content/uploads/2015/01/Location-Logo.png"
+                },
+                
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "none"
+                },
+                
+                {
+                "Columns": 6,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "reply",
+                "ActionBody" : "test reply",
+                "Text": "<font color=\"#27CFEA\">Reply</font>",
+                "TextHAlign" : "center",
+                "TextSize" : "small"
+                },
+                
+                {
+                "Columns": 6,
+                "Rows": 4,
+                "BgColor": "#FFFFFF",
+                "ActionType": "none",
+                "BgMediaType" : "picture",
+                "BgMedia" : "http://www.allidoislisten.com/wp-content/uploads/2012/07/tameimpala_elephant-620x412-290x290.png"
+                },
+                
+                {
+                "Columns": 5,
+                "Rows": 2,
+                "BgColor": "#1D3C63",
+                "ActionType": "none",
+                "Text": "<font color=\"#ffffff\"><b>Tame Impala </b> <br>23:00<br> Sirocco Club, Calle Mar 18</font>",
+                "TextHAlign" : "left",
+                "TextSize" : "small"
+                },
+                
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "open-url",
+                "ActionBody": "https://goo.gl/maps/9zemfPkjXC12",
+                "Image" : "http://newsite.southwindschurch.org/wp-content/uploads/2015/01/Location-Logo.png"
+                },
+                
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "none"
+                },
+                
+                {
+                "Columns": 6,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "open-url",
+                "ActionBody" : "viber-test://shopping/open?productid=bla-bla-bla",
+                "Text": "<font color=\"#27CFEA\">Open Keyboard</font>",
+                "TextHAlign" : "center",
+                "TextSize" : "small"
+                },
+                
+                
+                {
+                "Columns": 6,
+                "Rows": 4,
+                "BgColor": "#FFFFFF",
+                "ActionType": "none",
+                "BgMediaType" : "picture",
+                "BgMedia" : "http://www.belaruspartisan.org/upload/iblock/9b3/9b3b74f4f258255fcd6c48553c700599.jpg"
+                },
+                
+                {
+                "Columns": 5,
+                "Rows": 2,
+                "BgColor": "#1D3C63",
+                "ActionType": "none",
+                "Text": "<font color=\"#ffffff\"><b>J:Морс </b> <br>20:00<br> Sirocco Club, Calle Mar 18</font>",
+                "TextHAlign" : "left",
+                "TextSize" : "small"
+                },
+                
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "open-url",
+                "ActionBody": "https://goo.gl/maps/9zemfPkjXC12",
+                "Image" : "http://newsite.southwindschurch.org/wp-content/uploads/2015/01/Location-Logo.png"
+                },
+                
+                {
+                "Columns": 1,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "none"
+                },
+                
+                {
+                "Columns": 6,
+                "Rows": 1,
+                "BgColor": "#1D3C63",
+                "ActionType": "open-url",
+                "ActionBody" : "http://www.tameimpala.com",
+                "Text": "<font color=\"#27CFEA\">BOOK TICKETS NOW</font>",
+                "TextHAlign" : "center",
+                "TextSize" : "small"
+                }
+                
+                
+                
+                
+                ]
+}

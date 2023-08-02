@@ -1,0 +1,44 @@
+{
+    "Type": "keyboard",
+    "Buttons": [{
+                "Columns": 6,
+                "Rows": 2,
+                "ActionType": "open-url",
+                "OpenURLType" : "internal",
+                "ActionBody": "reply",
+                "BgColor": "#2db9b9",
+                "Text": "test",
+                "TextSize": "regular",
+                "Image": "http://images.clipartpanda.com/smiley-face-png-niEXeBpBT.png",
+                "TextOpacity": 60,
+                "TextForPA": "hi"
+                },
+                
+                {
+                "Columns": 6,
+                "Rows": 2,
+                "ActionType": "open-url",
+                "OpenURLType" : "sjdhjflsdk",
+                "ActionBody": "reply",
+                "BgColor": "#2db9b9",
+                "Text": "test",
+                "TextSize": "regular",
+                "Image": "http://images.clipartpanda.com/smiley-face-png-niEXeBpBT.png",
+                "TextOpacity": 60,
+                "TextForPA": "hi"
+                },
+                
+                {
+                "Columns": 6,
+                "Rows": 2,
+                "ActionType": "open-url",
+                "ActionBody": "reply",
+                "BgColor": "#2db9b9",
+                "Text": "test",
+                "TextSize": "regular",
+                "Image": "http://images.clipartpanda.com/smiley-face-png-niEXeBpBT.png",
+                "TextOpacity": 60,
+                "TextForPA": "hi"
+                }
+                ]
+}
