@@ -18,8 +18,8 @@
                 "Rows" : 2,
                 "BgColor": "#FFFFFF",
                 "ActionType": "open-url",
-                "ActionBody": "http://bbc.com/trump.html",
-                "Text": "<i><font color=\"#bfbfbf\">CNN@Donald Trump met Wednesday with GOP strategist Paul Manafort, a huddle that suggests campaign changes... Republican presidential</font> <br><font color=\"#FF0000\">Read More</font></i>",
+                "ActionBody": "http://bbc.com/ukrain.html",
+                "Text": "<i><font color=\"#bfbfbf\">CNN@Ukrain won</font> <br><font color=\"#FF0000\">Read More...</font></i>",
                 "TextHAlign" : "left",
                 "TextSize": "small"
                 }

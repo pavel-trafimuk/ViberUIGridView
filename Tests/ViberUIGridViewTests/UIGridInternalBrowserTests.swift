@@ -1,8 +1,6 @@
 //
-//  UIGridInternalBrowserTests.swift
-//  
-//
-//  Created by Pavel Trafimuk on 17/07/2023.
+//  Created by Pavel Trafimuk
+//  Copyright © 2023 Viber Media Sarl. All rights reserved.
 //
 
 import XCTest

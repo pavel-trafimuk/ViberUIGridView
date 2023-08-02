@@ -1,9 +1,7 @@
 //
-//  File.swift
-//  
+//  Created by Pavel Trafimuk
+//  Copyright © 2023 Viber Media Sarl. All rights reserved.
 //
-//  Created by Pavel Trafimuk on 14/11/2022.
-//  Viber Media, Inc.
 
 import Foundation
 
@@ -57,7 +55,7 @@ public struct UIGrid: Codable, Equatable {
     public let backgroundColor: String?
     
     public enum InputFieldState: String, Codable, UnknownDecodable {
-        public static var unknown: UIGrid.InputFieldState = .regular
+        public static let unknown: UIGrid.InputFieldState = .regular
         
         /// display regular size input field
         case regular
@@ -77,7 +75,7 @@ public struct UIGrid: Codable, Equatable {
     /// API: rev.6+
     public let favoritesMetadata: UIGridFavorites?
     
-    public enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case type = "Type"
         case isDefaultHeight = "DefaultHeight"
         case customDefaultHeight = "CustomDefaultHeight"
@@ -126,13 +124,13 @@ public struct UIGrid: Codable, Equatable {
                                              inputFieldState: nil,
                                              favoritesMetadata: nil)
     
-    public static func keyboard(with buttons: [UIGridButton],
-                                isDefaultHeight: Bool,
-                                customDefaultHeight: Int? = nil,
-                                buttonsGroupColumns: Int,
-                                buttonsGroupRows: Int,
-                                backgroundColor: String? = nil,
-                                inputFieldState: InputFieldState = .regular) throws -> Self {
+    public static func forKeyboard(with buttons: [UIGridButton],
+                                   isDefaultHeight: Bool,
+                                   customDefaultHeight: Int? = nil,
+                                   buttonsGroupColumns: Int,
+                                   buttonsGroupRows: Int,
+                                   backgroundColor: String? = nil,
+                                   inputFieldState: InputFieldState = .regular) throws -> Self {
         guard !buttons.isEmpty else {
             throw UIGridError.emptyButtons
         }
@@ -149,10 +147,10 @@ public struct UIGrid: Codable, Equatable {
                       favoritesMetadata: nil)
     }
     
-    public static func rich(with buttons: [UIGridButton],
-                            buttonsGroupColumns: Int? = nil,
-                            buttonsGroupRows: Int? = nil,
-                            backgroundColor: String? = nil) throws -> Self {
+    public static func forRichMessage(with buttons: [UIGridButton],
+                                      buttonsGroupColumns: Int? = nil,
+                                      buttonsGroupRows: Int? = nil,
+                                      backgroundColor: String? = nil) throws -> Self {
         guard !buttons.isEmpty else {
             throw UIGridError.emptyButtons
         }

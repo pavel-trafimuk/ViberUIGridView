@@ -1,8 +1,6 @@
 //
-//  File.swift
-//  
-//
-//  Created by Pavel Trafimuk on 17/07/2023.
+//  Created by Pavel Trafimuk
+//  Copyright © 2023 Viber Media Sarl. All rights reserved.
 //
 
 import Foundation
@@ -46,7 +44,7 @@ public struct UIGridFavorites: Codable, Equatable {
     
     public let alternativeText: String?
     
-    public enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case type
         case url
         case title

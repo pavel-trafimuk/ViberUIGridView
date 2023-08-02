@@ -1,8 +1,6 @@
 //
-//  File.swift
-//  
-//
-//  Created by Pavel Trafimuk on 13/07/2023.
+//  Created by Pavel Trafimuk
+//  Copyright © 2023 Viber Media Sarl. All rights reserved.
 //
 
 import Foundation
@@ -91,7 +89,7 @@ public struct UIGridButton: Codable, Equatable {
     public let isSilent: Bool?
     
     public enum OpenUrlType: String, Codable, UnknownDecodable {
-        public static var unknown: UIGridButton.OpenUrlType = .external
+        public static let unknown: UIGridButton.OpenUrlType = .external
         
         case `internal`
         case external
@@ -103,7 +101,7 @@ public struct UIGridButton: Codable, Equatable {
     public let openUrlType: OpenUrlType?
     
     public enum OpenUrlMediaType: String, Codable, UnknownDecodable {
-        public static var unknown: UIGridButton.OpenUrlMediaType = .notMedia
+        public static let unknown: UIGridButton.OpenUrlMediaType = .notMedia
         
         case notMedia = "not-media"
         case video
@@ -156,7 +154,7 @@ public struct UIGridButton: Codable, Equatable {
     public let imageScaleType: MediaScaleType
     
     public enum TextVAlign: String, Codable, UnknownDecodable {
-        public static var unknown: UIGridButton.TextVAlign = .middle
+        public static let unknown: UIGridButton.TextVAlign = .middle
         
         case top
         case middle
@@ -168,7 +166,7 @@ public struct UIGridButton: Codable, Equatable {
     public let textVAlign: TextVAlign
     
     public enum TextHAlign: String, Codable, UnknownDecodable {
-        public static var unknown: UIGridButton.TextHAlign = .center
+        public static let unknown: UIGridButton.TextHAlign = .center
         
         case left
         case center
@@ -190,7 +188,7 @@ public struct UIGridButton: Codable, Equatable {
     public let text: String?
     
     public enum TextSize: String, Codable, UnknownDecodable {
-        public static var unknown: UIGridButton.TextSize = .regular
+        public static let unknown: UIGridButton.TextSize = .regular
         case small
         case regular
         case large
@@ -227,7 +225,7 @@ public struct UIGridButton: Codable, Equatable {
     /// API: rev.6+
     public let map: UIGridButtonMap?
     
-    public enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case columns = "Columns"
         case rows = "Rows"
         case backgroundColor = "BgColor"

@@ -1,9 +1,6 @@
 //
-//  UIGridButtonMediaPlayer.swift
-//
-//
-//  Created by Pavel Trafimuk on 13/07/2023.
-//  Viber Media, Inc.
+//  Created by Pavel Trafimuk
+//  Copyright © 2023 Viber Media Sarl. All rights reserved.
 //
 
 import Foundation
@@ -30,7 +27,7 @@ public struct UIGridButtonMediaPlayer: Codable, Equatable {
     /// API: rev.7+
     public let actionReplyData: String?
     
-    public enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case title = "Title"
         case subtitle = "Subtitle"
         case thumbnailUrl = "ThumbnailURL"

@@ -1,9 +1,6 @@
 //
-//  UIGridInternalBrowser.swift
-//
-//
-//  Created by Pavel Trafimuk on 13/07/2023.
-//  Viber Media, Inc.
+//  Created by Pavel Trafimuk
+//  Copyright © 2023 Viber Media Sarl. All rights reserved.
 //
 
 import Foundation
@@ -13,7 +10,7 @@ import Foundation
 public struct UIGridInternalBrowser: Codable, Equatable {
     
     public enum ActionButton: String, Codable, Equatable, UnknownDecodable {
-        public static var unknown = ActionButton.none
+        public static let unknown = ActionButton.none
         
         /// do not display button
         case none
@@ -37,7 +34,7 @@ public struct UIGridInternalBrowser: Codable, Equatable {
     
     /// Type of title for internal browser if not custom
     public enum TitleType: String, Codable, Equatable, UnknownDecodable {
-        public static var unknown = TitleType.default
+        public static let unknown = TitleType.default
 
         /// means the content in the page's <OG:title> element or in <title> tag
         case `default`
@@ -54,7 +51,7 @@ public struct UIGridInternalBrowser: Codable, Equatable {
     public let customTitle: String?
     
     public enum Mode: String, Codable, UnknownDecodable {
-        public static var unknown = Mode.fullscreen
+        public static let unknown = Mode.fullscreen
 
         case fullscreen
         case fullscreenPortrait = "fullscreen-portrait"
@@ -68,7 +65,7 @@ public struct UIGridInternalBrowser: Codable, Equatable {
     public let mode: Mode
     
     public enum FooterType: String, Codable, UnknownDecodable {
-        public static var unknown = FooterType.`default`
+        public static let unknown = FooterType.`default`
 
         case `default`
         case hidden
@@ -82,7 +79,7 @@ public struct UIGridInternalBrowser: Codable, Equatable {
     /// API: rev.6+
     public let actionReplyData: String?
     
-    public enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case actionButton = "ActionButton"
         case actionPredefinedURL = "ActionPredefinedURL"
         case titleType = "TitleType"

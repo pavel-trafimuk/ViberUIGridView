@@ -1,27 +1,25 @@
 //
-//  File.swift
-//  
+//  Created by Pavel Trafimuk
+//  Copyright © 2023 Viber Media Sarl. All rights reserved.
 //
-//  Created by Pavel Trafimuk on 13/01/2023.
-//  Viber Media, Inc.
 
 import Foundation
 
 // Markdown supported only in text/picture messages
 extension String {
-    public func bold() -> String {
+    public func markdownBold() -> String {
         "*" + self.trimmingCharacters(in: .whitespaces) + "*"
     }
     
-    public func italics() -> String {
+    public func markdownItalics() -> String {
         "_" + self.trimmingCharacters(in: .whitespaces) + "_"
     }
     
-    public func monospace() -> String {
+    public func markdownMonospace() -> String {
         "```" + self.trimmingCharacters(in: .whitespaces) + "```"
     }
     
-    public func strikethrough() -> String {
+    public func markdownStrikethrough() -> String {
         "~" + self.trimmingCharacters(in: .whitespaces) + "~"
     }
 }

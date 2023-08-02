@@ -1,8 +1,6 @@
 //
-//  File.swift
-//
-//
-//  Created by Pavel Trafimuk on 18/07/2023.
+//  Created by Pavel Trafimuk
+//  Copyright © 2023 Viber Media Sarl. All rights reserved.
 //
 
 import XCTest
@@ -51,7 +49,7 @@ final class UIGridTests: XCTestCase {
             XCTAssert(b.isLoopInBackground == true, "Incorrect button background loops flag")
             XCTAssert(b.isSilent == nil, "Incorrect Silent Mode flag")
             XCTAssert(b.backgroundMedia == nil, "Incorrect button background media URL")
-            XCTAssert(b.actionBody == "www.tut.by", "Incorrect button action body")
+            XCTAssert(b.actionBody == "www.tvp.info", "Incorrect button action body")
             XCTAssert(b.actionType == .openUrl, "Incorrect button action type")
             XCTAssert(b.image == nil, "Incorrect button image URL")
             XCTAssert(b.text == "<b>Viber</b> is the best company")
@@ -202,7 +200,7 @@ final class UIGridTests: XCTestCase {
             XCTAssert(b.actionBody == "http://bbc.com/trump.html", "Incorrect button action body")
             XCTAssert(b.actionType == .openUrl, "Incorrect button action type")
             XCTAssert(b.image == nil, "Incorrect button image URL")
-            XCTAssert(b.text == "<i><font color=\"#bfbfbf\">CNN@Donald Trump met Wednesday with GOP strategist Paul Manafort, a huddle that suggests campaign changes... Republican presidential</font> <br><font color=\"#FF0000\">Read More</font></i>", "Incorrect button raw text")
+            XCTAssert(b.text == "<i><font color=\"#bfbfbf\">CNN@Ukrain won</font> <br><font color=\"#FF0000\">Read More...</font></i>")
             XCTAssert(b.textHAlign == .left, "Incorrect button text H align")
             XCTAssert(b.textVAlign == .middle, "Incorrect button text V align")
             XCTAssert(b.textOpacity == 100, "Incorrect button text opacity")

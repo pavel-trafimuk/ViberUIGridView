@@ -1,9 +1,6 @@
 //
-//  UIGridButtonFrame.swift
-//
-//
-//  Created by Pavel Trafimuk on 13/07/2023.
-//  Viber Media, Inc.
+//  Created by Pavel Trafimuk
+//  Copyright © 2023 Viber Media Sarl. All rights reserved.
 //
 
 import Foundation
@@ -21,7 +18,7 @@ public struct UIGridButtonFrame: Codable, Equatable {
     /// valid range: 0...10
     public let cornerRadius: UInt
     
-    public enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case borderWidth = "BorderWidth"
         case borderColor = "BorderColor"
         case cornerRadius = "CornerRadius"
