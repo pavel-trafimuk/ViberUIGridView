@@ -5,20 +5,13 @@
 
 import Foundation
 
-// TODO: WARN add
-//    - (void)setPublicAccountID:(NSString *)publicAccountID {
-//        _publicAccountID = publicAccountID;
-//        [self.buttonModels makeObjectsPerformSelector:@selector(setPublicAccountID:) withObject:publicAccountID];
-//    }
-//
-
 public struct UIGridButton: Codable, Equatable {
 
     public let columns: UInt
     public let rows: UInt
 
     public var size: UIGridSize {
-        .init(columns: columns, rows: rows)
+        UIGridSize(width: columns, height: rows)
     }
     
     /// Background color of button
@@ -176,13 +169,18 @@ public struct UIGridButton: Codable, Equatable {
     /// Horizontal align of the text
     public let textHAlign: TextHAlign
     
+    // TODO: implement defaults!
     /// Custom paddings for the text in points.
     /// The value is array of Integer number [top, left, bottom, right]
     /// Ranges: 4 values, 0 .. 12
     /// Default is [12, 12, 12, 12]
     /// on iOS top and bottom paddings decrease (up to 1p) if text cannot be fit
     /// API: rev.4+
-    public let textPaddings: [Int]?
+    public let textPaddings: [Int]
+    
+    public var isDefaultTextPaddings: Bool {
+        textPaddings == Constants.textDefaultPaddings
+    }
     
     /// Text with HTML tags
     public let text: String?
@@ -224,6 +222,10 @@ public struct UIGridButton: Codable, Equatable {
     /// Configuration for open-map action
     /// API: rev.6+
     public let map: UIGridButtonMap?
+    
+    public enum Constants {
+        public static let textDefaultPaddings = [12, 12, 12, 12]
+    }
     
     private enum CodingKeys: String, CodingKey {
         case columns = "Columns"
@@ -275,7 +277,7 @@ public struct UIGridButton: Codable, Equatable {
                 imageScaleType: UIGridButton.MediaScaleType = .crop,
                 textVAlign: UIGridButton.TextVAlign = .middle,
                 textHAlign: UIGridButton.TextHAlign = .center,
-                textPaddings: [Int]? = nil,
+                textPaddings: [Int] = Constants.textDefaultPaddings,
                 text: String? = nil,
                 textSize: UIGridButton.TextSize = .regular,
                 isTextShouldFit: Bool = false,
@@ -365,7 +367,7 @@ public struct UIGridButton: Codable, Equatable {
             self.textPaddings = paddings
         }
         else {
-            self.textPaddings = nil
+            self.textPaddings = Constants.textDefaultPaddings
         }
         
         self.text = try container.decodeIfPresent(String.self, forKey: .text)
@@ -378,7 +380,14 @@ public struct UIGridButton: Codable, Equatable {
             self.isTextShouldFit = false
         }
 
-        self.textOpacity = try container.decodeIfPresent(Int.self, forKey: .textOpacity) ?? 100
+        if let opacity = try container.decodeIfPresent(Int.self, forKey: .textOpacity),
+            opacity >= 0,
+           opacity <= 100 {
+            self.textOpacity = opacity
+        }
+        else {
+            self.textOpacity = 100
+        }
         self.textBackgroundGradientColor = try container.decodeIfPresent(String.self, forKey: .textBackgroundGradientColor)
         self.frame = try container.decodeIfPresent(UIGridButtonFrame.self, forKey: .frame)
         self.map = try container.decodeIfPresent(UIGridButtonMap.self, forKey: .map)
@@ -392,5 +401,9 @@ extension UIGridButton {
         && textBackgroundGradientColor?.isEmpty == false
         && text != nil
         && text?.isEmpty == false
+    }
+    
+    public var doesBackgroundMediaContainMapSnapshot: Bool {
+        backgroundMedia?.absoluteString.lowercased().contains("maps.google.com/maps/api/staticmap") ?? false
     }
 }

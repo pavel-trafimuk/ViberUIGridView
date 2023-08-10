@@ -4,7 +4,7 @@
 //
 
 import XCTest
-@testable import ViberUIGridView
+@testable import UIGrid
 
 public enum UIGridTestsError: Error {
     case notExists
@@ -543,7 +543,7 @@ final class UIGridTests: XCTestCase {
     }
     
     
-    func testRichMessagesDefaultGroupSize_0() throws {
+    func testRichMessagesDefaultGridGroupSize_0() throws {
         let vm = try UIGrid.load(from: "richMessagesJSONExample")
         XCTAssert(vm.buttons.count == 5, "Invalid count of buttons in rich message")
         XCTAssert(vm.buttonsGroupColumns == 6)
@@ -551,7 +551,7 @@ final class UIGridTests: XCTestCase {
     }
     
     
-    func testRichMessagesDefaultGroupSize_1() throws {
+    func testRichMessagesDefaultGridGroupSize_1() throws {
         let vm = try UIGrid.load(from: "uiGridInvalidRowsColumnsOfGroup")
         
         XCTAssert(vm.buttonsGroupColumns == 6)

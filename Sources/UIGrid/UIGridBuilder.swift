@@ -1,9 +1,7 @@
-////
-////  File.swift
-////  
-////
-////  Created by Pavel Trafimuk on 11/01/2023.
-////  Viber Media, Inc.
+//
+//  Created by Pavel Trafimuk
+//  Copyright © 2023 Viber Media Sarl. All rights reserved.
+//
 //
 //import Foundation
 //

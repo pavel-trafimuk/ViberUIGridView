@@ -4,7 +4,7 @@
 //
 
 import XCTest
-@testable import ViberUIGridView
+@testable import UIGrid
 
 final class UIGridInternalBrowserTests: XCTestCase {
 
