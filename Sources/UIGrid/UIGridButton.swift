@@ -11,7 +11,7 @@ public struct UIGridButton: Codable, Equatable {
     public let rows: UInt
 
     public var size: UIGridSize {
-        .init(width: columns, height: rows)
+        UIGridSize(width: columns, height: rows)
     }
     
     /// Background color of button

@@ -46,7 +46,7 @@ public final class UIGridButtonView: UICollectionViewCell {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        preconditionFailure("init(coder:) has not been implemented")
     }
     
     enum Constants {
@@ -92,13 +92,17 @@ public final class UIGridButtonView: UICollectionViewCell {
     
     override public var isSelected: Bool {
         didSet {
-            updateForPressedState()
+            if isSelected != oldValue {
+                updateForPressedState()
+            }
         }
     }
     
     override public var isHighlighted: Bool {
         didSet {
-            updateForPressedState()
+            if isHighlighted != oldValue {
+                updateForPressedState()
+            }
         }
     }
 }

@@ -14,16 +14,16 @@ public enum UIGridType: String, Codable, UnknownDecodable {
 extension UIGridType {
     public var defaultButtonsGridGroupSize: UIGridSize {
         switch self {
-        case .keyboard: return .init(width: 6, height: 2)
-        case .richMedia: return .init(width: 6, height: 7)
+        case .keyboard: return UIGridSize(width: 6, height: 2)
+        case .richMedia: return UIGridSize(width: 6, height: 7)
             
-        case .unknown: return .init(width: 1, height: 1)
+        case .unknown: return UIGridSize(width: 1, height: 1)
         }
     }
     
     public func defaultButtonSize(gridGroupSize: UIGridSize) -> UIGridSize {
         switch self {
-        case .keyboard: return .init(width: gridGroupSize.width, height: 1)
+        case .keyboard: return UIGridSize(width: gridGroupSize.width, height: 1)
         case .richMedia: return gridGroupSize
             
         case .unknown: return gridGroupSize

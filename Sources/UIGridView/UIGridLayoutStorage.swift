@@ -36,11 +36,11 @@ public struct UIGridFrame: Equatable {//} Sequence, IteratorProtocol {
     public var height: UInt
     
     public var origin: UIGridPoint {
-        .init(x: x, y: y)
+        UIGridPoint(x: x, y: y)
     }
     
     public var size: UIGridSize {
-        .init(width: width, height: height)
+        UIGridSize(width: width, height: height)
     }
     
     public init(x: Int, y: Int, width: UInt, height: UInt) {
@@ -101,7 +101,7 @@ public struct UIGridPoint: Equatable {
     }
     
     public static var zero: UIGridPoint {
-        .init(x: 0, y: 0)
+        UIGridPoint(x: 0, y: 0)
     }
     
     public func isInside(_ frame: UIGridFrame) -> Bool {
@@ -242,11 +242,11 @@ extension UIGridLayoutStorage {
             guard
                 let xValues = storage[idy]
             else {
-                return .init(x: 0, y: idy)
+                return UIGridPoint(x: 0, y: idy)
             }
             
             for idx in 0..<Int(gridGroupSize.width) where xValues[idx] == nil {
-                return .init(x: idx, y: idy)
+                return UIGridPoint(x: idx, y: idy)
             }
         }
         return nil
@@ -260,6 +260,6 @@ extension UIGridLayoutStorage {
         else {
             return nil
         }
-        return .init(x: lastX, y: lastY)
+        return UIGridPoint(x: lastX, y: lastY)
     }
 }

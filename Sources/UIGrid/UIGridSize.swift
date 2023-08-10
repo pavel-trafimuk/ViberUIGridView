@@ -15,11 +15,12 @@ public struct UIGridSize: Equatable {
     public let height: UInt
     
     public var zero: UIGridSize {
-        .init(width: 0, height: 0)
+        UIGridSize(width: 0, height: 0)
     }
-        public var isZero: Bool {
+    
+    public var isZero: Bool {
         width == 0 && height == 0
     }
     
-    public var cgSize: CGSize { .init(width: Double(width), height: Double(height)) }
+    public var cgSize: CGSize { CGSize(width: Double(width), height: Double(height)) }
 }

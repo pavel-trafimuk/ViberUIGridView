@@ -33,7 +33,7 @@ public protocol UIGridMediaView: AnyObject, UIView, Equatable {
     func stopAnimation()
 }
 
-public protocol UIGridMediaProvider {
+public protocol UIGridMediaProvider: AnyObject {
     
     func requestImage(_ url: URL,
                       sizeInUI: CGSize,

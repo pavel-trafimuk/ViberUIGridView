@@ -14,6 +14,8 @@ enum UIGridLayoutStorageGeneratorError: Error {
 
 public struct UIGridLayoutStorageGenerator {
     
+    public let logger: UIGridViewLogger
+    
     /// bot keyboard style
     public func generateStorageForKeyboard(with elements: [IndexPath: UIGridSize],
                                            limitOfGroupsInOneRow: UInt,
@@ -121,7 +123,7 @@ public struct UIGridLayoutStorageGenerator {
                     try result.insert(path: indexPath, frame: updatedFrame)
                 }
                 catch {
-                    print("Can't place: \(error)")
+                    logger.logError("Can't place: \(error)")
                 }
             }
             

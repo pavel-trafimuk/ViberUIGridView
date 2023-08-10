@@ -23,7 +23,7 @@ final class UIGridLayoutStorageTests: XCTestCase {
         let storage = UIGridLayoutStorage()
         XCTAssert(storage.countOfGroups == 0)
         XCTAssert(storage.lastUsedPoint() == nil)
-        XCTAssert(storage.frame(for: IndexPath(row: 0, section: 0)) == nil)
+        XCTAssert(storage.frame(for: IndexPath(item: 0, section: 0)) == nil)
         XCTAssert(storage.frames.isEmpty)
         XCTAssert(storage.storage.isEmpty)
     }
@@ -33,7 +33,7 @@ final class UIGridLayoutStorageTests: XCTestCase {
         let groupSize = UIGridSize(width: 6, height: 2)
 
         do {
-            let path = IndexPath(row: 0, section: 0)
+            let path = IndexPath(item: 0, section: 0)
             let frame = UIGridFrame(x: 0, y: 0, width: 6, height: 1)
             XCTAssert(storage.canInsert(frame: frame, gridGroupSize: groupSize))
             
@@ -56,7 +56,7 @@ final class UIGridLayoutStorageTests: XCTestCase {
         }
         
         do {
-            let path = IndexPath(row: 1, section: 0)
+            let path = IndexPath(item: 1, section: 0)
             let frame = UIGridFrame(x: 0, y: 1, width: 3, height: 1)
             XCTAssert(storage.canInsert(frame: frame, gridGroupSize: groupSize))
             
@@ -84,7 +84,7 @@ final class UIGridLayoutStorageTests: XCTestCase {
         }
         
         do {
-            let path = IndexPath(row: 2, section: 0)
+            let path = IndexPath(item: 2, section: 0)
             let frame = UIGridFrame(x: 3, y: 1, width: 5, height: 1)
             XCTAssert(storage.canInsert(frame: frame, gridGroupSize: groupSize) == false)
             

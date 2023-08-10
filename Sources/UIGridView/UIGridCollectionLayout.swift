@@ -29,6 +29,7 @@ public protocol UIGridCollectionLayoutDataSource {
 public final class UIGridCollectionLayout: UICollectionViewLayout {
     
     var dataSource: UIGridCollectionLayoutDataSource
+    let logger: UIGridViewLogger
 
     /// Layout can increase/decrease each element on specific value to make spaces between elements, use insets for this
     public var cellInsets: UIEdgeInsets? {
@@ -65,13 +66,15 @@ public final class UIGridCollectionLayout: UICollectionViewLayout {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        preconditionFailure("init(coder:) has not been implemented")
     }
 
     init(dataSource: UIGridCollectionLayoutDataSource,
-         gridGroupSize: UIGridSize) {
+         gridGroupSize: UIGridSize,
+         logger: UIGridViewLogger) {
         self.dataSource = dataSource
         self.gridGroupSize = gridGroupSize
+        self.logger = logger
         super.init()
     }
     
@@ -205,7 +208,7 @@ public final class UIGridCollectionLayout: UICollectionViewLayout {
         for section in 0..<sectionsCount {
             let rowsCount = collectionView.numberOfItems(inSection: section)
             for row in 0..<rowsCount {
-                let indexPath = IndexPath(row: row, section: section)
+                let indexPath = IndexPath(item: row, section: section)
                 guard let size = dataSource.gridSize(for: indexPath) else {
                     continue
                 }
@@ -214,16 +217,16 @@ public final class UIGridCollectionLayout: UICollectionViewLayout {
         }
         
         do {
-            let storage = try UIGridLayoutStorageGenerator().generateStorage(with: loadedValues,
-                                                                       limitOfGroupsInOneRow: limitOfGroupsInOneRow,
-                                                                       gridGroupSize: gridGroupSize,
-                                                                       reverseOrderForGroups: false,
-                                                                       flexibleRowsLayout: true) // TODO: check values!
+            let storage = try UIGridLayoutStorageGenerator(logger: logger).generateStorage(with: loadedValues,
+                                                                                           limitOfGroupsInOneRow: limitOfGroupsInOneRow,
+                                                                                           gridGroupSize: gridGroupSize,
+                                                                                           reverseOrderForGroups: false,
+                                                                                           flexibleRowsLayout: true) // TODO: check values!
             cachedStorages[limitOfGroupsInOneRow * gridGroupSize.width] = storage
             activeGridStorage = storage
         }
         catch {
-            print("Error: \(error)")
+            logger.logError("Error: \(error)")
         }
     }
 }

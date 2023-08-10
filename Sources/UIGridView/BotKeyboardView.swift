@@ -3,6 +3,7 @@
 //  Copyright © 2023 Viber Media Sarl. All rights reserved.
 //
 
+#if canImport(UIKit)
 import Foundation
 import UIKit
 import UIGrid
@@ -18,9 +19,10 @@ public final class BotKeyboardView: UIView {
     
     var collectionView: UICollectionView!
     var viewModel: UIGridViewModel
+    var logger: UIGridViewLogger { viewModel.logger }
     
     lazy var collectionViewLayout: UIGridCollectionLayout = {
-        let layout = UIGridCollectionLayout(dataSource: self, gridGroupSize: viewModel.gridGroupSize)
+        let layout = UIGridCollectionLayout(dataSource: self, gridGroupSize: viewModel.gridGroupSize, logger: logger)
         layout.cellInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: Constants.spaceBetweenBlocks, right: Constants.spaceBetweenBlocks)
         return layout
     }()
@@ -62,7 +64,7 @@ public final class BotKeyboardView: UIView {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        preconditionFailure("init(coder:) has not been implemented")
     }
     
     public func configure(with model: UIGridViewModel) {
@@ -284,3 +286,5 @@ extension BotKeyboardView: UIGridCollectionLayoutDataSource {
     
     
 }
+
+#endif

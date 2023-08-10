@@ -34,16 +34,9 @@ final class GradientView: UIView {
         }
         gradientLayer.locations = [NSNumber(value: 0.0), NSNumber(value: 1.0)]
     }
-
-    override var bounds: CGRect {
-        didSet {
-            gradientLayer?.frame = bounds
-        }
-    }
     
-    override var frame: CGRect {
-        didSet {
-            gradientLayer?.frame = bounds
-        }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        gradientLayer?.frame = bounds
     }
 }

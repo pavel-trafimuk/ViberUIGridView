@@ -52,6 +52,7 @@ public final class UIGridViewModel {
     
     public let grid: UIGrid
     public let buttonViewModels: [UIGridButtonViewModel]
+    public let logger: UIGridViewLogger
     
     public let defaultBackgroundColor: UIColor
     
@@ -111,11 +112,13 @@ public final class UIGridViewModel {
                 publicAccountId: String? = nil,
                 actionHandler: UIGridViewActionHandling?,
                 defaultBackgroundColor: UIColor,
-                mediaProvider: UIGridMediaProvider?) {
+                mediaProvider: UIGridMediaProvider?,
+                logger: UIGridViewLogger) {
         self.grid = grid
         self.publicAccountId = publicAccountId
         self.actionHandler = actionHandler
         self.mediaProvider = mediaProvider
+        self.logger = logger
         
         //    NSError *unError = nil;
         //    VIBUIGridModel *viewModel = nil;
@@ -151,6 +154,9 @@ public final class UIGridViewModel {
         //        self.backgroundColor = nil;
         //        self.buttonsGroupRows = [[self class] defaultButtonsgridGroupSize].height;
         //        self.buttonsGroupColumns = [[self class] defaultButtonsgridGroupSize].width;
+        // TODO: fix it
+        buttonViewModels = []
+        self.defaultBackgroundColor = .clear
     }
     
     // TODO: fix defaultButtonsgridGroupSize

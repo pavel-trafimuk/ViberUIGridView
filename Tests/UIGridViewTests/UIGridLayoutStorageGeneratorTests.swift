@@ -163,22 +163,22 @@ final class UIGridLayoutStorageGeneratorTests: XCTestCase {
 
     func testSimpleOrderedList() throws {
         let values = [
-            IndexPath(row: 0, section: 0): size6x1,
-            IndexPath(row: 1, section: 0): size6x1,
-            IndexPath(row: 2, section: 0): size6x1,
-            IndexPath(row: 3, section: 0): size6x1,
-            IndexPath(row: 4, section: 0): size6x1,
-            IndexPath(row: 5, section: 0): size6x1,
+            IndexPath(item: 0, section: 0): size6x1,
+            IndexPath(item: 1, section: 0): size6x1,
+            IndexPath(item: 2, section: 0): size6x1,
+            IndexPath(item: 3, section: 0): size6x1,
+            IndexPath(item: 4, section: 0): size6x1,
+            IndexPath(item: 5, section: 0): size6x1,
         ]
         let groupSize = UIGridSize(width: 6, height: 2)
         
         let checks = [
-            IndexPath(row: 0, section: 0): UIGridFrame(point: .init(x: 0, y: 0), size: size6x1),
-            IndexPath(row: 1, section: 0): UIGridFrame(point: .init(x: 0, y: 1), size: size6x1),
-            IndexPath(row: 2, section: 0): UIGridFrame(point: .init(x: 0, y: 2), size: size6x1),
-            IndexPath(row: 3, section: 0): UIGridFrame(point: .init(x: 0, y: 3), size: size6x1),
-            IndexPath(row: 4, section: 0): UIGridFrame(point: .init(x: 0, y: 4), size: size6x1),
-            IndexPath(row: 5, section: 0): UIGridFrame(point: .init(x: 0, y: 5), size: size6x1),
+            IndexPath(item: 0, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 0), size: size6x1),
+            IndexPath(item: 1, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 1), size: size6x1),
+            IndexPath(item: 2, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 2), size: size6x1),
+            IndexPath(item: 3, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 3), size: size6x1),
+            IndexPath(item: 4, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 4), size: size6x1),
+            IndexPath(item: 5, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 5), size: size6x1),
         ]
         let checkLastPoint = UIGridPoint(x: 5, y: 5)
         let checkCountOfGroups = 3
@@ -195,14 +195,14 @@ final class UIGridLayoutStorageGeneratorTests: XCTestCase {
 
     func testOrderedList_6x1_6x2() throws {
         let values = [
-            IndexPath(row: 0, section: 0): size6x1,
-            IndexPath(row: 1, section: 0): size6x2,
+            IndexPath(item: 0, section: 0): size6x1,
+            IndexPath(item: 1, section: 0): size6x2,
         ]
         let groupSize = UIGridSize(width: 6, height: 2)
         
         let checks = [
-            IndexPath(row: 0, section: 0): UIGridFrame(point: .init(x: 0, y: 0), size: size6x1),
-            IndexPath(row: 1, section: 0): UIGridFrame(point: .init(x: 0, y: 1), size: size6x2),
+            IndexPath(item: 0, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 0), size: size6x1),
+            IndexPath(item: 1, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 1), size: size6x2),
         ]
         let checkLastPoint = UIGridPoint(x: 5, y: 2)
         let checkCountOfGroups = 2
@@ -220,26 +220,26 @@ final class UIGridLayoutStorageGeneratorTests: XCTestCase {
 
     func testTwoBlocksInRow() throws {
         let values = [
-            IndexPath(row: 0, section: 0): size3x1,
-            IndexPath(row: 1, section: 0): size3x1,
-            IndexPath(row: 2, section: 0): size3x1,
-            IndexPath(row: 3, section: 0): size3x1,
-            IndexPath(row: 4, section: 0): size3x1,
-            IndexPath(row: 5, section: 0): size3x1,
-            IndexPath(row: 6, section: 0): size3x1,
-            IndexPath(row: 7, section: 0): size3x1,
+            IndexPath(item: 0, section: 0): size3x1,
+            IndexPath(item: 1, section: 0): size3x1,
+            IndexPath(item: 2, section: 0): size3x1,
+            IndexPath(item: 3, section: 0): size3x1,
+            IndexPath(item: 4, section: 0): size3x1,
+            IndexPath(item: 5, section: 0): size3x1,
+            IndexPath(item: 6, section: 0): size3x1,
+            IndexPath(item: 7, section: 0): size3x1,
         ]
         let groupSize = UIGridSize(width: 3, height: 2)
         
         let checks = [
-            IndexPath(row: 0, section: 0): UIGridFrame(point: .init(x: 0, y: 0), size: size3x1),
-            IndexPath(row: 1, section: 0): UIGridFrame(point: .init(x: 0, y: 1), size: size3x1),
-            IndexPath(row: 2, section: 0): UIGridFrame(point: .init(x: 3, y: 0), size: size3x1),
-            IndexPath(row: 3, section: 0): UIGridFrame(point: .init(x: 3, y: 1), size: size3x1),
-            IndexPath(row: 4, section: 0): UIGridFrame(point: .init(x: 0, y: 2), size: size3x1),
-            IndexPath(row: 5, section: 0): UIGridFrame(point: .init(x: 0, y: 3), size: size3x1),
-            IndexPath(row: 6, section: 0): UIGridFrame(point: .init(x: 3, y: 2), size: size3x1),
-            IndexPath(row: 7, section: 0): UIGridFrame(point: .init(x: 3, y: 3), size: size3x1),
+            IndexPath(item: 0, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 0), size: size3x1),
+            IndexPath(item: 1, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 1), size: size3x1),
+            IndexPath(item: 2, section: 0): UIGridFrame(point: UIGridPoint(x: 3, y: 0), size: size3x1),
+            IndexPath(item: 3, section: 0): UIGridFrame(point: UIGridPoint(x: 3, y: 1), size: size3x1),
+            IndexPath(item: 4, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 2), size: size3x1),
+            IndexPath(item: 5, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 3), size: size3x1),
+            IndexPath(item: 6, section: 0): UIGridFrame(point: UIGridPoint(x: 3, y: 2), size: size3x1),
+            IndexPath(item: 7, section: 0): UIGridFrame(point: UIGridPoint(x: 3, y: 3), size: size3x1),
         ]
         let checkLastPoint = UIGridPoint(x: 5, y: 3)
         let checkCountOfGroups = 4
@@ -256,24 +256,24 @@ final class UIGridLayoutStorageGeneratorTests: XCTestCase {
 
     func testTwoBlocksInRowWithEmpty() throws {
         let values = [
-            IndexPath(row: 0, section: 0): size3x1,
-            IndexPath(row: 1, section: 0): size3x1,
-            IndexPath(row: 2, section: 0): size3x1,
-            IndexPath(row: 3, section: 0): size3x1,
-            IndexPath(row: 4, section: 0): size3x1,
-            IndexPath(row: 5, section: 0): size3x1,
-            IndexPath(row: 6, section: 0): size3x1,
+            IndexPath(item: 0, section: 0): size3x1,
+            IndexPath(item: 1, section: 0): size3x1,
+            IndexPath(item: 2, section: 0): size3x1,
+            IndexPath(item: 3, section: 0): size3x1,
+            IndexPath(item: 4, section: 0): size3x1,
+            IndexPath(item: 5, section: 0): size3x1,
+            IndexPath(item: 6, section: 0): size3x1,
         ]
         let groupSize = UIGridSize(width: 3, height: 2)
         
         let checks = [
-            IndexPath(row: 0, section: 0): UIGridFrame(point: .init(x: 0, y: 0), size: size3x1),
-            IndexPath(row: 1, section: 0): UIGridFrame(point: .init(x: 0, y: 1), size: size3x1),
-            IndexPath(row: 2, section: 0): UIGridFrame(point: .init(x: 3, y: 0), size: size3x1),
-            IndexPath(row: 3, section: 0): UIGridFrame(point: .init(x: 3, y: 1), size: size3x1),
-            IndexPath(row: 4, section: 0): UIGridFrame(point: .init(x: 0, y: 2), size: size3x1),
-            IndexPath(row: 5, section: 0): UIGridFrame(point: .init(x: 0, y: 3), size: size3x1),
-            IndexPath(row: 6, section: 0): UIGridFrame(point: .init(x: 3, y: 2), size: size3x1),
+            IndexPath(item: 0, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 0), size: size3x1),
+            IndexPath(item: 1, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 1), size: size3x1),
+            IndexPath(item: 2, section: 0): UIGridFrame(point: UIGridPoint(x: 3, y: 0), size: size3x1),
+            IndexPath(item: 3, section: 0): UIGridFrame(point: UIGridPoint(x: 3, y: 1), size: size3x1),
+            IndexPath(item: 4, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 2), size: size3x1),
+            IndexPath(item: 5, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 3), size: size3x1),
+            IndexPath(item: 6, section: 0): UIGridFrame(point: UIGridPoint(x: 3, y: 2), size: size3x1),
         ]
         let checkLastPoint = UIGridPoint(x: 2, y: 3)
         let checkCountOfGroups = 4
@@ -289,28 +289,28 @@ final class UIGridLayoutStorageGeneratorTests: XCTestCase {
 
     func testFromGenaExample1Portrait() throws {
         let values = [
-            IndexPath(row: 0, section: 0): size2x2,
-            IndexPath(row: 1, section: 0): size4x1,
-            IndexPath(row: 2, section: 0): size4x1,
-            IndexPath(row: 3, section: 0): size2x2,
-            IndexPath(row: 4, section: 0): size4x1,
-            IndexPath(row: 5, section: 0): size4x1,
-            IndexPath(row: 6, section: 0): size2x2,
-            IndexPath(row: 7, section: 0): size4x1,
-            IndexPath(row: 8, section: 0): size4x1,
+            IndexPath(item: 0, section: 0): size2x2,
+            IndexPath(item: 1, section: 0): size4x1,
+            IndexPath(item: 2, section: 0): size4x1,
+            IndexPath(item: 3, section: 0): size2x2,
+            IndexPath(item: 4, section: 0): size4x1,
+            IndexPath(item: 5, section: 0): size4x1,
+            IndexPath(item: 6, section: 0): size2x2,
+            IndexPath(item: 7, section: 0): size4x1,
+            IndexPath(item: 8, section: 0): size4x1,
         ]
         let groupSize = UIGridSize(width: 6, height: 2)
         
         let checks = [
-            IndexPath(row: 0, section: 0): UIGridFrame(point: .init(x: 0, y: 0), size: size2x2),
-            IndexPath(row: 1, section: 0): UIGridFrame(point: .init(x: 2, y: 0), size: size4x1),
-            IndexPath(row: 2, section: 0): UIGridFrame(point: .init(x: 2, y: 1), size: size4x1),
-            IndexPath(row: 3, section: 0): UIGridFrame(point: .init(x: 0, y: 2), size: size2x2),
-            IndexPath(row: 4, section: 0): UIGridFrame(point: .init(x: 2, y: 2), size: size4x1),
-            IndexPath(row: 5, section: 0): UIGridFrame(point: .init(x: 2, y: 3), size: size4x1),
-            IndexPath(row: 6, section: 0): UIGridFrame(point: .init(x: 0, y: 4), size: size2x2),
-            IndexPath(row: 7, section: 0): UIGridFrame(point: .init(x: 2, y: 4), size: size4x1),
-            IndexPath(row: 8, section: 0): UIGridFrame(point: .init(x: 2, y: 5), size: size4x1),
+            IndexPath(item: 0, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 0), size: size2x2),
+            IndexPath(item: 1, section: 0): UIGridFrame(point: UIGridPoint(x: 2, y: 0), size: size4x1),
+            IndexPath(item: 2, section: 0): UIGridFrame(point: UIGridPoint(x: 2, y: 1), size: size4x1),
+            IndexPath(item: 3, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 2), size: size2x2),
+            IndexPath(item: 4, section: 0): UIGridFrame(point: UIGridPoint(x: 2, y: 2), size: size4x1),
+            IndexPath(item: 5, section: 0): UIGridFrame(point: UIGridPoint(x: 2, y: 3), size: size4x1),
+            IndexPath(item: 6, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 4), size: size2x2),
+            IndexPath(item: 7, section: 0): UIGridFrame(point: UIGridPoint(x: 2, y: 4), size: size4x1),
+            IndexPath(item: 8, section: 0): UIGridFrame(point: UIGridPoint(x: 2, y: 5), size: size4x1),
 
         ]
         let checkLastPoint = UIGridPoint(x: 5, y: 5)
@@ -328,28 +328,28 @@ final class UIGridLayoutStorageGeneratorTests: XCTestCase {
 
     func testFromGenaExample1Landscape() throws {
         let values = [
-            IndexPath(row: 0, section: 0): size2x2,
-            IndexPath(row: 1, section: 0): size4x1,
-            IndexPath(row: 2, section: 0): size4x1,
-            IndexPath(row: 3, section: 0): size2x2,
-            IndexPath(row: 4, section: 0): size4x1,
-            IndexPath(row: 5, section: 0): size4x1,
-            IndexPath(row: 6, section: 0): size2x2,
-            IndexPath(row: 7, section: 0): size4x1,
-            IndexPath(row: 8, section: 0): size4x1,
+            IndexPath(item: 0, section: 0): size2x2,
+            IndexPath(item: 1, section: 0): size4x1,
+            IndexPath(item: 2, section: 0): size4x1,
+            IndexPath(item: 3, section: 0): size2x2,
+            IndexPath(item: 4, section: 0): size4x1,
+            IndexPath(item: 5, section: 0): size4x1,
+            IndexPath(item: 6, section: 0): size2x2,
+            IndexPath(item: 7, section: 0): size4x1,
+            IndexPath(item: 8, section: 0): size4x1,
         ]
         let groupSize = UIGridSize(width: 6, height: 2)
         
         let checks = [
-            IndexPath(row: 0, section: 0): UIGridFrame(point: .init(x: 0, y: 0), size: size2x2),
-            IndexPath(row: 1, section: 0): UIGridFrame(point: .init(x: 2, y: 0), size: size4x1),
-            IndexPath(row: 2, section: 0): UIGridFrame(point: .init(x: 2, y: 1), size: size4x1),
-            IndexPath(row: 3, section: 0): UIGridFrame(point: .init(x: 6, y: 0), size: size2x2),
-            IndexPath(row: 4, section: 0): UIGridFrame(point: .init(x: 8, y: 0), size: size4x1),
-            IndexPath(row: 5, section: 0): UIGridFrame(point: .init(x: 8, y: 1), size: size4x1),
-            IndexPath(row: 6, section: 0): UIGridFrame(point: .init(x: 0, y: 2), size: size2x2),
-            IndexPath(row: 7, section: 0): UIGridFrame(point: .init(x: 2, y: 2), size: size4x1),
-            IndexPath(row: 8, section: 0): UIGridFrame(point: .init(x: 2, y: 3), size: size4x1),
+            IndexPath(item: 0, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 0), size: size2x2),
+            IndexPath(item: 1, section: 0): UIGridFrame(point: UIGridPoint(x: 2, y: 0), size: size4x1),
+            IndexPath(item: 2, section: 0): UIGridFrame(point: UIGridPoint(x: 2, y: 1), size: size4x1),
+            IndexPath(item: 3, section: 0): UIGridFrame(point: UIGridPoint(x: 6, y: 0), size: size2x2),
+            IndexPath(item: 4, section: 0): UIGridFrame(point: UIGridPoint(x: 8, y: 0), size: size4x1),
+            IndexPath(item: 5, section: 0): UIGridFrame(point: UIGridPoint(x: 8, y: 1), size: size4x1),
+            IndexPath(item: 6, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 2), size: size2x2),
+            IndexPath(item: 7, section: 0): UIGridFrame(point: UIGridPoint(x: 2, y: 2), size: size4x1),
+            IndexPath(item: 8, section: 0): UIGridFrame(point: UIGridPoint(x: 2, y: 3), size: size4x1),
 
         ]
         let checkLastPoint = UIGridPoint(x: 5, y: 3)
@@ -367,20 +367,20 @@ final class UIGridLayoutStorageGeneratorTests: XCTestCase {
 
     func testFromGenaExample2Portrait() throws {
         let values = [
-            IndexPath(row: 0, section: 0): size6x1,
-            IndexPath(row: 1, section: 0): size6x1,
-            IndexPath(row: 2, section: 0): size6x1,
-            IndexPath(row: 3, section: 0): size6x1,
-            IndexPath(row: 4, section: 0): size6x1,
+            IndexPath(item: 0, section: 0): size6x1,
+            IndexPath(item: 1, section: 0): size6x1,
+            IndexPath(item: 2, section: 0): size6x1,
+            IndexPath(item: 3, section: 0): size6x1,
+            IndexPath(item: 4, section: 0): size6x1,
         ]
         let groupSize = UIGridSize(width: 6, height: 2)
         
         let checks = [
-            IndexPath(row: 0, section: 0): UIGridFrame(point: .init(x: 0, y: 0), size: size6x1),
-            IndexPath(row: 1, section: 0): UIGridFrame(point: .init(x: 0, y: 1), size: size6x1),
-            IndexPath(row: 2, section: 0): UIGridFrame(point: .init(x: 0, y: 2), size: size6x1),
-            IndexPath(row: 3, section: 0): UIGridFrame(point: .init(x: 0, y: 3), size: size6x1),
-            IndexPath(row: 4, section: 0): UIGridFrame(point: .init(x: 0, y: 4), size: size6x1),
+            IndexPath(item: 0, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 0), size: size6x1),
+            IndexPath(item: 1, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 1), size: size6x1),
+            IndexPath(item: 2, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 2), size: size6x1),
+            IndexPath(item: 3, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 3), size: size6x1),
+            IndexPath(item: 4, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 4), size: size6x1),
 
         ]
         let checkLastPoint = UIGridPoint(x: 5, y: 4)
@@ -398,20 +398,20 @@ final class UIGridLayoutStorageGeneratorTests: XCTestCase {
 
     func testFromGenaExample2Landscape() throws {
         let values = [
-            IndexPath(row: 0, section: 0): size6x1,
-            IndexPath(row: 1, section: 0): size6x1,
-            IndexPath(row: 2, section: 0): size6x1,
-            IndexPath(row: 3, section: 0): size6x1,
-            IndexPath(row: 4, section: 0): size6x1,
+            IndexPath(item: 0, section: 0): size6x1,
+            IndexPath(item: 1, section: 0): size6x1,
+            IndexPath(item: 2, section: 0): size6x1,
+            IndexPath(item: 3, section: 0): size6x1,
+            IndexPath(item: 4, section: 0): size6x1,
         ]
         let groupSize = UIGridSize(width: 6, height: 2)
         
         let checks = [
-            IndexPath(row: 0, section: 0): UIGridFrame(point: .init(x: 0, y: 0), size: size6x1),
-            IndexPath(row: 1, section: 0): UIGridFrame(point: .init(x: 0, y: 1), size: size6x1),
-            IndexPath(row: 2, section: 0): UIGridFrame(point: .init(x: 6, y: 0), size: size6x1),
-            IndexPath(row: 3, section: 0): UIGridFrame(point: .init(x: 6, y: 1), size: size6x1),
-            IndexPath(row: 4, section: 0): UIGridFrame(point: .init(x: 0, y: 2), size: size6x1),
+            IndexPath(item: 0, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 0), size: size6x1),
+            IndexPath(item: 1, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 1), size: size6x1),
+            IndexPath(item: 2, section: 0): UIGridFrame(point: UIGridPoint(x: 6, y: 0), size: size6x1),
+            IndexPath(item: 3, section: 0): UIGridFrame(point: UIGridPoint(x: 6, y: 1), size: size6x1),
+            IndexPath(item: 4, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 2), size: size6x1),
 
         ]
         let checkLastPoint = UIGridPoint(x: 5, y: 2)
@@ -429,16 +429,16 @@ final class UIGridLayoutStorageGeneratorTests: XCTestCase {
 
     func testFromGenaExample3Portrait() throws {
         let values = [
-            IndexPath(row: 0, section: 0): size2x1,
-            IndexPath(row: 1, section: 0): size2x1,
-            IndexPath(row: 2, section: 0): size2x1,
+            IndexPath(item: 0, section: 0): size2x1,
+            IndexPath(item: 1, section: 0): size2x1,
+            IndexPath(item: 2, section: 0): size2x1,
         ]
         let groupSize = UIGridSize(width: 6, height: 2)
         
         let checks = [
-            IndexPath(row: 0, section: 0): UIGridFrame(point: .init(x: 0, y: 0), size: size2x1),
-            IndexPath(row: 1, section: 0): UIGridFrame(point: .init(x: 2, y: 0), size: size2x1),
-            IndexPath(row: 2, section: 0): UIGridFrame(point: .init(x: 4, y: 0), size: size2x1),
+            IndexPath(item: 0, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 0), size: size2x1),
+            IndexPath(item: 1, section: 0): UIGridFrame(point: UIGridPoint(x: 2, y: 0), size: size2x1),
+            IndexPath(item: 2, section: 0): UIGridFrame(point: UIGridPoint(x: 4, y: 0), size: size2x1),
 
         ]
         let checkLastPoint = UIGridPoint(x: 5, y: 0)
@@ -456,16 +456,16 @@ final class UIGridLayoutStorageGeneratorTests: XCTestCase {
 
     func testFromGenaExample3Landscape() throws {
         let values = [
-            IndexPath(row: 0, section: 0): size2x1,
-            IndexPath(row: 1, section: 0): size2x1,
-            IndexPath(row: 2, section: 0): size2x1,
+            IndexPath(item: 0, section: 0): size2x1,
+            IndexPath(item: 1, section: 0): size2x1,
+            IndexPath(item: 2, section: 0): size2x1,
         ]
         let groupSize = UIGridSize(width: 6, height: 2)
         
         let checks = [
-            IndexPath(row: 0, section: 0): UIGridFrame(point: .init(x: 0, y: 0), size: size2x1),
-            IndexPath(row: 1, section: 0): UIGridFrame(point: .init(x: 2, y: 0), size: size2x1),
-            IndexPath(row: 2, section: 0): UIGridFrame(point: .init(x: 4, y: 0), size: size2x1),
+            IndexPath(item: 0, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 0), size: size2x1),
+            IndexPath(item: 1, section: 0): UIGridFrame(point: UIGridPoint(x: 2, y: 0), size: size2x1),
+            IndexPath(item: 2, section: 0): UIGridFrame(point: UIGridPoint(x: 4, y: 0), size: size2x1),
 
         ]
         let checkLastPoint = UIGridPoint(x: 5, y: 0)
@@ -483,23 +483,23 @@ final class UIGridLayoutStorageGeneratorTests: XCTestCase {
 
     func testFromGenaExample4Portrait() throws {
         let values = [
-            IndexPath(row: 0, section: 0): size2x1,
-            IndexPath(row: 1, section: 0): size2x1,
-            IndexPath(row: 2, section: 0): size2x1,
-            IndexPath(row: 3, section: 0): size2x1,
-            IndexPath(row: 4, section: 0): size2x1,
-            IndexPath(row: 5, section: 0): size2x1,
+            IndexPath(item: 0, section: 0): size2x1,
+            IndexPath(item: 1, section: 0): size2x1,
+            IndexPath(item: 2, section: 0): size2x1,
+            IndexPath(item: 3, section: 0): size2x1,
+            IndexPath(item: 4, section: 0): size2x1,
+            IndexPath(item: 5, section: 0): size2x1,
 
         ]
         let groupSize = UIGridSize(width: 6, height: 2)
         
         let checks = [
-            IndexPath(row: 0, section: 0): UIGridFrame(point: .init(x: 0, y: 0), size: size2x1),
-            IndexPath(row: 1, section: 0): UIGridFrame(point: .init(x: 2, y: 0), size: size2x1),
-            IndexPath(row: 2, section: 0): UIGridFrame(point: .init(x: 4, y: 0), size: size2x1),
-            IndexPath(row: 3, section: 0): UIGridFrame(point: .init(x: 0, y: 1), size: size2x1),
-            IndexPath(row: 4, section: 0): UIGridFrame(point: .init(x: 2, y: 1), size: size2x1),
-            IndexPath(row: 5, section: 0): UIGridFrame(point: .init(x: 4, y: 1), size: size2x1),
+            IndexPath(item: 0, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 0), size: size2x1),
+            IndexPath(item: 1, section: 0): UIGridFrame(point: UIGridPoint(x: 2, y: 0), size: size2x1),
+            IndexPath(item: 2, section: 0): UIGridFrame(point: UIGridPoint(x: 4, y: 0), size: size2x1),
+            IndexPath(item: 3, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 1), size: size2x1),
+            IndexPath(item: 4, section: 0): UIGridFrame(point: UIGridPoint(x: 2, y: 1), size: size2x1),
+            IndexPath(item: 5, section: 0): UIGridFrame(point: UIGridPoint(x: 4, y: 1), size: size2x1),
         ]
         let checkLastPoint = UIGridPoint(x: 5, y: 1)
         let checkCountOfGroups = 1
@@ -516,23 +516,23 @@ final class UIGridLayoutStorageGeneratorTests: XCTestCase {
 
     func testFromGenaExample4Landscape() throws {
         let values = [
-            IndexPath(row: 0, section: 0): size2x1,
-            IndexPath(row: 1, section: 0): size2x1,
-            IndexPath(row: 2, section: 0): size2x1,
-            IndexPath(row: 3, section: 0): size2x1,
-            IndexPath(row: 4, section: 0): size2x1,
-            IndexPath(row: 5, section: 0): size2x1,
+            IndexPath(item: 0, section: 0): size2x1,
+            IndexPath(item: 1, section: 0): size2x1,
+            IndexPath(item: 2, section: 0): size2x1,
+            IndexPath(item: 3, section: 0): size2x1,
+            IndexPath(item: 4, section: 0): size2x1,
+            IndexPath(item: 5, section: 0): size2x1,
 
         ]
         let groupSize = UIGridSize(width: 6, height: 2)
         
         let checks = [
-            IndexPath(row: 0, section: 0): UIGridFrame(point: .init(x: 0, y: 0), size: size2x1),
-            IndexPath(row: 1, section: 0): UIGridFrame(point: .init(x: 2, y: 0), size: size2x1),
-            IndexPath(row: 2, section: 0): UIGridFrame(point: .init(x: 4, y: 0), size: size2x1),
-            IndexPath(row: 3, section: 0): UIGridFrame(point: .init(x: 0, y: 1), size: size2x1),
-            IndexPath(row: 4, section: 0): UIGridFrame(point: .init(x: 2, y: 1), size: size2x1),
-            IndexPath(row: 5, section: 0): UIGridFrame(point: .init(x: 4, y: 1), size: size2x1),
+            IndexPath(item: 0, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 0), size: size2x1),
+            IndexPath(item: 1, section: 0): UIGridFrame(point: UIGridPoint(x: 2, y: 0), size: size2x1),
+            IndexPath(item: 2, section: 0): UIGridFrame(point: UIGridPoint(x: 4, y: 0), size: size2x1),
+            IndexPath(item: 3, section: 0): UIGridFrame(point: UIGridPoint(x: 0, y: 1), size: size2x1),
+            IndexPath(item: 4, section: 0): UIGridFrame(point: UIGridPoint(x: 2, y: 1), size: size2x1),
+            IndexPath(item: 5, section: 0): UIGridFrame(point: UIGridPoint(x: 4, y: 1), size: size2x1),
         ]
         let checkLastPoint = UIGridPoint(x: 5, y: 1)
         let checkCountOfGroups = 1
